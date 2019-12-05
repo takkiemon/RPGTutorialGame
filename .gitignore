@@ -38,3 +38,4 @@ __pycache__/*
 
 # These are handled elsewhere.
 /Code/SDKs/*
+Code/CMakeLists.txt
