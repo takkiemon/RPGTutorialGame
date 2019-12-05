@@ -1,0 +1,12 @@
+<AssetMetadata version="0" type="Character" guid="c0ec0ad5-4f8f-637d-cb76-ec90d4872bda">
+ <Files>
+  <File path="thirdperson.cdf"/>
+ </Files>
+ <Details />
+ <Dependencies>
+  <Path>objects/characters/samplecharacter/skelProxy.chr</Path>
+  <Path>objects/characters/samplecharacter/motusbodymat</Path>
+  <Path>objects/characters/samplecharacter/motusBody.skin</Path>
+  <Path>objects/characters/samplecharacter/motusBodyMAT.mtl</Path>
+ </Dependencies>
+</AssetMetadata>
