@@ -18,6 +18,7 @@ public:
 	SItemComponent::~SItemComponent() {}
 
 	virtual void Initialize() override;
+	virtual void InitializeClass() = 0;
 	virtual uint64 GetEventMask() const override;
 	virtual void ProcessEvent(SEntityEvent& event) override;
 	static void ReflectType(Schematyc::CTypeDesc<SItemComponent>& desc);
@@ -26,6 +27,6 @@ public:
 	virtual void Physicalize();
 	//
 	SItemProperties *GetProperties() { return &sItemProperties; }
-private:
+protected:
 	SItemProperties sItemProperties, sPrevItemProperties;
 };

@@ -1,17 +1,6 @@
 #include "StdAfx.h"
 #include "ItemComponent.h"
 
-static void RegisterItem(Schematyc::IEnvRegistrar& registrar)
-{
-	Schematyc::CEnvRegistrationScope scope = registrar.Scope(IEntity::GetEntityScopeGUID());
-	{
-		Schematyc::CEnvRegistrationScope componentScope = scope.Register(SCHEMATYC_MAKE_ENV_COMPONENT(SItemComponent));
-		{
-		}
-	}
-}
-CRY_STATIC_AUTO_REGISTER_FUNCTION(&RegisterItem)
-
 void SItemComponent::Initialize()
 {
 	LoadGeometry();
@@ -35,6 +24,7 @@ void SItemComponent::ProcessEvent(SEntityEvent & event)
 
 			LoadGeometry();
 			Physicalize();
+			InitializeClass();
 		}
 	}
 	break;
@@ -44,9 +34,6 @@ void SItemComponent::ProcessEvent(SEntityEvent & event)
 void SItemComponent::ReflectType(Schematyc::CTypeDesc<SItemComponent>& desc)
 {
 	desc.SetGUID("{18C094CC-645E-41B7-A4AB-58AAED8683DF}"_cry_guid);
-	desc.SetLabel("Item Component");
-	desc.SetDescription("Base item component");
-	desc.AddMember(&SItemComponent::sItemProperties, 'itep', "ItemProperties", "Item settings", "all properties of this item", SItemProperties());
 }
 
 void SItemComponent::LoadGeometry()
