@@ -19,7 +19,7 @@ public:
 	CMeleeWeaponComponent::~CMeleeWeaponComponent() {}
 
 	virtual void InitializeClass() override;
-	virtual void ProcessEvent(SEntityEvent& event) override;
+	virtual void ProcessEventClass(SEntityEvent& event) override;
 	static void ReflectType(Schematyc::CTypeDesc<CMeleeWeaponComponent>& desc); // CryLog("ik ben bij 1:37:37 in de tutorial https://youtu.be/h4wEQUwO5PY?t=5857"); dafuq is er met de 'gEnv' ?
 	//MELEE WEAPON COMPONENT
 

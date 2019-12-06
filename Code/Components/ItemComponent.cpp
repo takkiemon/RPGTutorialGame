@@ -29,6 +29,7 @@ void SItemComponent::ProcessEvent(SEntityEvent & event)
 	}
 	break;
 	}
+	ProcessEventClass(event);
 }
 
 void SItemComponent::ReflectType(Schematyc::CTypeDesc<SItemComponent>& desc)
@@ -54,4 +55,18 @@ void SItemComponent::Physicalize()
 	PhysParams.mass = GetProperties()->sPhysicsProperties.fMass;
 	PhysParams.type = PE_RIGID;
 	m_pEntity->Physicalize(PhysParams);
+}
+
+void SItemComponent::PickUp(CPlayerComponent *pNewOwner)
+{
+	if (!pNewOwner)
+		return;
+
+	pOwner = pNewOwner;
+	pOwner->GetEntity()->AttachChild(m_pEntity);
+}
+
+bool SItemComponent::IsPickable()
+{
+	return !pOwner;
 }
