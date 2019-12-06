@@ -5,6 +5,7 @@ void SItemComponent::Initialize()
 {
 	LoadGeometry();
 	Physicalize();
+	CreateItemName();
 	InitializeClass();
 }
 
@@ -62,7 +63,11 @@ void SItemComponent::CreateItemName()
 {
 	string sLongName = m_pEntity->GetClass()->GetName();
 	sLongName.erase(0, sLongName.find_last_of(':') + 1);
-	GetProperties()->sItemName = sLongName;
+	string sFirst;
+	sFirst.SetAt(0, sLongName[0]);
+	sFirst.MakeUpper();
+	sLongName.erase(0, 1);
+	GetProperties()->sItemName = sFirst + sLongName;
 }
 
 void SItemComponent::PickUp(CPlayerComponent *pNewOwner)
