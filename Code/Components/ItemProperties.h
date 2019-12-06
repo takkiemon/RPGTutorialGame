@@ -47,6 +47,9 @@ struct SItemProperties
 
 	SRenderProperties sRenderProperties;
 	SPhysicsProperties sPhysicsProperties;
+	//item specific
+	//non-editor variables:
+	string sItemName;
 };
 static void ReflectType(Schematyc::CTypeDesc<SItemProperties>& desc)
 {

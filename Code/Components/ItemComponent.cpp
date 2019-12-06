@@ -57,6 +57,13 @@ void SItemComponent::Physicalize()
 	m_pEntity->Physicalize(PhysParams);
 }
 
+void SItemComponent::CreateItemName()
+{
+	string sLongName = m_pEntity->GetClass()->GetName();
+	sLongName.erase(0, sLongName.find_last_of(':') + 1);
+	GetProperties()->sItemName = sLongName;
+}
+
 void SItemComponent::PickUp(CPlayerComponent *pNewOwner)
 {
 	if (!pNewOwner)

@@ -1,0 +1,77 @@
+<CrySchematyc CryXmlVersion="2" version="105" guid="9bb71f76-76bb-4f26-8b51-805d1daf3ac2" scope="">
+ <root elementType="Class" guid="54b6c217-e72f-43da-93a2-949689ea8a40" name="Blade of Fury">
+  <userDocumentation author="Tak Man" description=""/>
+  <extensions />
+  <children>
+   <element elementType="Constructor" guid="b8ef5a18-7e0c-44e6-a0a5-64809cdcfbcd" name="ConstructionGraph">
+    <userDocumentation author="Tak Man" description=""/>
+    <extensions>
+     <Graph>
+      <pos x="0" y="0"/>
+      <nodes>
+       <element key="e1df503d-a43d-4593-8001-9071ccbc6a78" typeGUID="12bdfa06-ba95-4e48-bb2d-bb48a7080abc">
+        <value guid="e1df503d-a43d-4593-8001-9071ccbc6a78">
+         <pos x="0" y="0"/>
+        </value>
+       </element>
+      </nodes>
+      <links />
+     </Graph>
+    </extensions>
+    <children />
+   </element>
+   <element elementType="SignalReceiver" guid="b760529c-3ed7-487b-8208-f216609a5455" name="SignalGraph" type="Universal" signalGUID="">
+    <userDocumentation author="Tak Man" description=""/>
+    <extensions>
+     <Graph>
+      <pos x="0" y="0"/>
+      <nodes>
+       <element key="c058c020-397a-41e0-a567-aa5b87f8a3b9" typeGUID="ad2aee64-0a60-4469-8ec7-38b4b720d30c">
+        <value guid="c058c020-397a-41e0-a567-aa5b87f8a3b9" objectGUID="">
+         <pos x="0" y="0"/>
+         <signalId domain="Env" guid="a9279137-7c66-491d-b9a0-8752c24c8979"/>
+        </value>
+       </element>
+       <element key="711dad81-98d9-47d2-b020-de31880932cd" typeGUID="ad2aee64-0a60-4469-8ec7-38b4b720d30c">
+        <value guid="711dad81-98d9-47d2-b020-de31880932cd" objectGUID="">
+         <pos x="0" y="100"/>
+         <signalId domain="Env" guid="52ad5add-7781-429b-b4a9-0cb6c905e353"/>
+        </value>
+       </element>
+       <element key="b7492b34-27c9-4a5a-9b86-c383cdb82232" typeGUID="ad2aee64-0a60-4469-8ec7-38b4b720d30c">
+        <value guid="b7492b34-27c9-4a5a-9b86-c383cdb82232" objectGUID="">
+         <pos x="0" y="200"/>
+         <signalId domain="Env" guid="b2561caa-0753-458b-a91f-e8e38b0f0cdf"/>
+        </value>
+       </element>
+      </nodes>
+      <links />
+     </Graph>
+    </extensions>
+    <children />
+   </element>
+   <element elementType="Base" guid="df5e122b-fb6d-4704-8218-483ff927e130" name="Base [Entity]">
+    <classId domain="Env" guid="be845278-0dd2-409f-b8be-97895607c256"/>
+    <envClassProperties icon="%EDITOR%/objecticons/schematyc.bmp" bHideInEditor="false" bTriggerAreas="true"/>
+    <extensions />
+    <children>
+     <element elementType="ComponentInstance" guid="4d8c2698-91ed-4dfb-9506-31a86b4cecb1" name="Entity" accessor="Private" typeGUID="e88093df-904f-4c52-af38-911e26777cdc">
+      <properties />
+      <extensions />
+      <children />
+     </element>
+    </children>
+   </element>
+   <element elementType="ComponentInstance" guid="5d7ea1f0-4cf1-4425-859a-ed0f2dcd0504" name="Melee Weapon Component" accessor="Private" typeGUID="8b81d8f2-19cc-406d-b0d8-94c071845e75">
+    <properties>
+     <ItemProperties>
+      <RenderProperties GeometryPath="Objects/Default/primitive_sphere_small.cgf" MaterialPath="%engine%/engineassets/materials/material_default.mtl"/>
+      <PhysicsProperties Mass="2"/>
+     </ItemProperties>
+    </properties>
+    <extensions />
+    <children />
+   </element>
+  </children>
+ </root>
+</CrySchematyc>

@@ -30,6 +30,8 @@ public:
 	virtual void Physicalize();
 	//
 	SItemProperties *GetProperties() { return &sItemProperties; }
+	virtual void CreateItemName();
+	virtual string GetItemName() { return GetProperties()->sItemName; }
 	//
 	virtual void PickUp(CPlayerComponent *pNewOwner);
 	virtual bool IsPickable();
