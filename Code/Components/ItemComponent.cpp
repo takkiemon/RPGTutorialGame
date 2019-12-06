@@ -5,6 +5,7 @@ void SItemComponent::Initialize()
 {
 	LoadGeometry();
 	Physicalize();
+	InitializeClass();
 }
 
 uint64 SItemComponent::GetEventMask() const
