@@ -3,6 +3,7 @@
   <File path="example/example.cry"/>
  </Files>
  <Dependencies>
+  <Path>%editor%/materials/crydesigner_selection.mtl</Path>
   <Path>%editor%/objects/envcube.cgf</Path>
   <Path>%editor%/objects/envcube.mtl</Path>
   <Path>%engine%/engineassets/codecoverage/hit.dds</Path>
@@ -20,7 +21,9 @@
   <Path>%engine%/engineassets/materials/fog/oceanoutoflowspec.mtl</Path>
   <Path>%engine%/engineassets/materials/water/wateroceanbottom.mtl</Path>
   <Path>%engine%/engineassets/objects/default.cgf</Path>
+  <Path>%engine%/engineassets/texturemsg/defaultnouvs.dds</Path>
   <Path>%engine%/engineassets/texturemsg/defaultsolids.mtl</Path>
+  <Path>%engine%/engineassets/texturemsg/orange_for_designer.dds</Path>
   <Path>%engine%/engineassets/textures/defaults/16_12.dds</Path>
   <Path>%engine%/engineassets/textures/defaults/16_34.dds</Path>
   <Path>%engine%/engineassets/textures/defaults/16_5.dds</Path>

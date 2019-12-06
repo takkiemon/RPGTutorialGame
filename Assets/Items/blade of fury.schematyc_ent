@@ -65,7 +65,7 @@
    <element elementType="ComponentInstance" guid="5d7ea1f0-4cf1-4425-859a-ed0f2dcd0504" name="Melee Weapon Component" accessor="Private" typeGUID="8b81d8f2-19cc-406d-b0d8-94c071845e75">
     <properties>
      <ItemProperties>
-      <RenderProperties GeometryPath="Objects/Default/primitive_sphere_small.cgf" MaterialPath="%engine%/engineassets/materials/material_default.mtl"/>
+      <RenderProperties GeometryPath="Objects/Items/Blade  of Fury.cgf" MaterialPath="%engine%/engineassets/materials/material_default.mtl"/>
       <PhysicsProperties Mass="2"/>
      </ItemProperties>
     </properties>
