@@ -140,7 +140,7 @@ void CPlayerComponent::Update(float frameTime)
 				if (SItemComponent *pColliderItem = pColliderEntity->GetComponent<SItemComponent>())
 				{
 					if(pColliderItem->IsPickable())
-						ShowPickupMessage(pColliderItem->GetEntity()->GetName());
+						ShowPickupMessage(pColliderItem->GetItemName());
 				}
 			}
 		}
